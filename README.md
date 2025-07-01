@@ -82,23 +82,17 @@ Practical Assessment for Associate Software Engineer
 
 
 
-2\. Backend Setup (Spring Boot)
-
-\- Open the server folder in IntelliJ IDEA (or your preferred Java IDE)
-
-\- Make sure you have JDK 17 (or compatible) installed
-
-\- Build the project using Maven or your IDE's build tool
-
-\- Run the application by running the main class (usually annotated with @SpringBootApplication)
-
-
-
 3\. Frontend Setup (React)
 
 \- Open the client folder in VS Code
 
-\- Make sure Node.js and npm are inlled.
+\- Make sure Node.js and npm are installed
 
-Install dependencies:
+\- Open root folder, and install npm modules using 'npm install' command
+
+\- Run react app using 'npm run dev' command
+
+
+
+
 
