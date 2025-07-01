@@ -1,14 +1,11 @@
 package com.attendance.system.loginservice.profile;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
-@Data
 @AllArgsConstructor
-@NoArgsConstructor
+@Data
 public class LoginResponse {
     private String jwtToken;
     private String username;
