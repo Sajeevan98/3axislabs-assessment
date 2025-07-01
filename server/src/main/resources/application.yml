@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: login-service-with-jwt
+
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+
+  jwt:
+    jwtSecretKey: ${JWT_SECRET_KEY}
+    jwtExpirationTime: ${JWT_EXPIRATION}
+
+  login:
+    credentials:
+      adminUsername: ${ADMIN_USERNAME}
+      adminPassword: ${ADMIN_PASSWORD}
+      userUsername: ${USER_USERNAME}
+      userPassword: ${USER_PASSWORD}
