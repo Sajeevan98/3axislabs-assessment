@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { BiSolidHide, BiSolidShow } from "react-icons/bi";
+import API from '../config/Api';
 
-const Login = () => {
+const Login = ({onLogin}) => {
    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -22,6 +23,7 @@ const Login = () => {
             localStorage.setItem('roles', JSON.stringify(roles));
             localStorage.setItem('role', role);
 
+            console.log(username, " - ", password)
             onLogin(role, jwtToken);
 
         } catch (err) {
